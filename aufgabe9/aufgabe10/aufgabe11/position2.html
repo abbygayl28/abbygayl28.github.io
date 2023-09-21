@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <style>
+        body {
+            background-color: aliceblue;
+            
+        }
+
+
+        #row1 {
+            border: 3px solid blue;
+            margin-bottom: 40px;
+        }
+        #row2 {
+            border: 3px solid red;
+            margin-bottom: 40px;
+        }
+        #row3 {
+            border: 3px solid green;            
+            margin-bottom: 40px;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .box {
+            border: 3px solid pink;
+            width: 80px;
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+
+    
+    <div style="background: red; width: 90px; height: 90px; position: absolute; left: 40px;">one</div>
+    <div style="background: green; width: 90px; height: 90px; position: absolute; right: 620px;">two</div>
+    <div style="background: red; width: 90px; height: 90px; position: absolute; right: 520px;">Three</div>
+    <div style="background: red; width: 90px; height: 90px; position: absolute; right: 420px;">Four</div>
+    <div style="background: red; width: 90px; height: 90px; position: absolute; right: 320px;">Six</div>
+    
+    <div style="background: red; width: 90px; height: 90px; position: relative; right: 320px; position:">Six</div>
+    <div style="background: red; width: 90px; height: 90px; position: relative; left: 40px;">one</div>
+    <div style="background: green; width: 90px; height: 90px; position: relative; right: 620px;">two</div>
+    <div style="background: red; width: 90px; height: 90px; position: relative; right: 520px;">Three</div>
+    <div style="background: red; width: 90px; height: 90px; position: relative; right: 420px;">Four</div>
+    <div style="background: red; width: 90px; height: 90px; position: relative; bottom: 620px; position: left: 200px;">Six</div>
+    
+</div>
+<p style="position: fixed; top:0; right:0; background: white;">ICH BIN HIER</p>
+
+-->
+    
+<!--
+    1. Abstände zwischen den Boxen
+    2. Farben für die Boxen
+    3. Position umzusetzen
+    4. Border entfernen
+-->
+
+<div id="row1">
+    <p>position: static</p>
+    <div class="box-container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+</div>
+<div id="row2">
+    
+    <p>position: relative</p>
+    <div class="box-container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+</div>
+<div id="row3">
+    <p>position: absolute</p>
+    <div class="box-container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
