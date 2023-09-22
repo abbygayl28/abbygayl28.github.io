@@ -20,6 +20,7 @@
         .box-container {
             display: flex;
             flex-wrap: nowrap;
+            position: relative;
         }
         .box {
             border: 3px solid rgb(247, 3, 3);
@@ -35,14 +36,39 @@
             
             
         }
-
-        .
-
-        
+        #static {
+            position: static;
+            top: 100px;
+            left: 100px;
+        }
+        #relative {
+            position: relative;
+            top: 20px;
+            left: 25px;
+        }
+        #absolute {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
 
     </style>
 </head>
 <body>
+
+    <nav>
+        <h1>Navigation</h1>
+        <ul>
+           <li><a href="/">Katzen</a></li>
+           <li><a href="https://abbygayl28.github.io/aufgabe9/float.html">Hamster float</a></li>
+           <li><a href="https://abbygayl28.github.io/aufgabe9/aufgabe10/aufgabe11/position2.html">block position</a></li>
+           <li><a href="https://abbygayl28.github.io/box.html">HALLO WELT</a></li>
+           <li><a href="https://abbygayl28.github.io/form.html">Bunt</a></li>
+           <li><a href="https://abbygayl28.github.io/form2.html">Formular</a></li>
+           <li><a href="https://abbygayl28.github.io/aufgabe1/index.html">Hamster Bunt</a></li>
+       </ul>
+     </nav>
+
 <!--
 
     
@@ -74,20 +100,17 @@
 <div id="row1">
     <p>position: static</p>
     <div class="box-container">
-    
-    
         <div class="box">One</div>
-        <div class="box green">Two</div>
+        <div id="static" class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
 </div>
 <div id="row2">
-    
     <p>position: relative</p>
     <div class="box-container">
         <div class="box">One</div>
-        <div class="box green">Two</div>
+        <div id="relative" class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
@@ -96,7 +119,7 @@
     <p>position: absolute</p>
     <div class="box-container">
         <div class="box">One</div>
-        <div class="box green">Two</div>
+        <div id="absolute" class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
