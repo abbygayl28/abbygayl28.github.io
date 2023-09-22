@@ -9,32 +9,36 @@
   
     <style>
         body {
-            background-color: aliceblue;
+            background-color: rgb(240, 247, 242);
             
         }
 
 
-        #row1 {
-            border: 3px solid blue;
-            margin-bottom: 40px;
-        }
-        #row2 {
-            border: 3px solid red;
-            margin-bottom: 40px;
-        }
-        #row3 {
-            border: 3px solid green;            
-            margin-bottom: 40px;
-        }
+        
+  
+    
         .box-container {
             display: flex;
             flex-wrap: nowrap;
         }
         .box {
-            border: 3px solid pink;
+            border: 3px solid rgb(247, 3, 3);
             width: 80px;
+            margin-right: 10px;
             height: 80px;
+            background-color: red;
         }
+
+        .green{
+            background-color: green;
+            border: 3px solid green;
+            
+            
+        }
+
+        .
+
+        
 
     </style>
 </head>
@@ -70,8 +74,10 @@
 <div id="row1">
     <p>position: static</p>
     <div class="box-container">
+    
+    
         <div class="box">One</div>
-        <div class="box">Two</div>
+        <div class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
@@ -81,7 +87,7 @@
     <p>position: relative</p>
     <div class="box-container">
         <div class="box">One</div>
-        <div class="box">Two</div>
+        <div class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
@@ -90,7 +96,7 @@
     <p>position: absolute</p>
     <div class="box-container">
         <div class="box">One</div>
-        <div class="box">Two</div>
+        <div class="box green">Two</div>
         <div class="box">Three</div>
         <div class="box">Four</div>
     </div>
